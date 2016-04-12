@@ -37,7 +37,7 @@ stopButton.addEventListener("click", function (event) {
 // Get the web cam feed
 if (!crossBrowserGetUserMedia) {
     displayError("Unfortunately, your browser doesn't support webcam feeds " +
-                 "in the browser :(")
+                 "in the browser :(");
 }
 else {
     // Request a video stream

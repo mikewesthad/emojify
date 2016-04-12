@@ -10,7 +10,7 @@ module.exports = EmojiCanvas;
 function EmojiCanvas(ctracker) {
     this.ctracker = ctracker;
     this.debugModeEnabled = false;
-};
+}
 
 EmojiCanvas.prototype.start = function(width, height, parentElement) {
     // Using p5 in instance mode:
@@ -57,8 +57,8 @@ EmojiCanvas.prototype._draw = function(p) {
 EmojiCanvas.prototype._keyPressed = function(p) {
     var lowerKey = p.key.toLowerCase();
     if (lowerKey === "f") {
-        this.debugModeEnabled = !this.debugModeEnabled
-    };
+        this.debugModeEnabled = !this.debugModeEnabled;
+    }
 };
 
 EmojiCanvas.prototype._drawDebug = function(p, facePoints, score) {

@@ -70,7 +70,10 @@ function handleStream(mediaStream) {
 function handleError(error) {
     console.log("Error: %s", error);
     if (error.name.toLowerCase() === "permissiondeniederror") {
-        displayError("This app needs permission to use your webcam.");
+        displayError("This app needs permission to use your webcam.  Make " +
+                     "sure you allow permission and that you are viewing " +
+                     "the site using " +
+                     "<a href='https://www.mikewesthad.com/emojify/'>HTTPS</a>.");
     }        
     else {
         displayError("Error getting webcam feed!");
@@ -79,6 +82,6 @@ function handleError(error) {
 
 function displayError(message) {
     var errorMessage = document.getElementById("error-message");
-    errorMessage.textContent = message;
+    errorMessage.innerHTML = message;
     errorMessage.style.display = "block";
 }

@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$button-color: #1E6CE0;
+
+html, body {	
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+#wrap {
+	display: block;
+	text-align: center;
+
+	h1 {
+		margin: 20px 0;
+		font-size: 1.5em;
+		font-weight: normal;
+		color: #0F0F0F;
+	}
+
+	#tracker-container {
+		position: relative;
+		display: inline-block;
+		
+		// Canvas will be set up to overlayed exactly on top of the video in
+		// the #tracker-container 
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		#controls {
+			margin: 20px 0 0 0;			
+		}
+	}
+}
+
+.border-button {
+	margin-right: 10px;
+	font-size: 1.2em;
+	display: inline-block;
+	padding: 10px 35px;
+	text-transform: lowercase;
+	box-shadow: none;
+	border: 2px solid $button-color;
+	outline: none;
+	color: $button-color;
+	background-color: #fff;
+	transition: all 0.3s;
+
+	&:hover {
+		color: #fff;
+		background-color: $button-color;
+	}
+}

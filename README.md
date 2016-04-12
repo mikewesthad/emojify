@@ -18,6 +18,6 @@ If you want to build the project yourself, follow these steps:
 4. Run the default gulp task from terminal: `gulp`.  This will build the site into the `build/` folder and up a local server on port 8080 where the built site can be viewed.  (E.g. [http://127.0.0.1:8080](http://127.0.0.1:8080))
 
 ## License
->You can check out the full license [here](https://github.com/mikewesthad/pirate-speak/blob/master/LICENSE)
+>You can check out the full license [here](https://github.com/mikewesthad/emojify/blob/master/license.md)
 
 This project is licensed under the terms of the **MIT** license.

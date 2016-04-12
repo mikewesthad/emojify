@@ -55,7 +55,7 @@ EmojiCanvas.prototype._keyPressed = function(p) {
 EmojiCanvas.prototype._drawDebug = function(p, facePoints, score) {
     p.fill(255);
     p.noStroke();
-    text("Face Score: " + round(faceScore * 100), 10, 40);
+    p.text("Face Match: " + p.round(score * 100) + "%", 10, 40);
     p.fill(255);
     p.stroke(0);
     p.strokeWeight(1);

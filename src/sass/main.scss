@@ -37,6 +37,18 @@ html, body {
 			margin: 20px 0 0 0;			
 		}
 	}
+
+	#references {
+		margin-top: 20px;
+		font-size: 0.8em;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			margin-top: 5px;
+		}
+
+	}
 }
 
 .border-button {

@@ -1,5 +1,7 @@
 # Emojify
 
+![emojify demo](emojify-demo.gif)
+
 Live site at: [emojify](http://mikewesthad.github.io/emojify)
 
 Playing around with JavaScript face tracking.  Emojify tracks your face position and draws an emoji on top of it.  If you smile, the emoji smiles too.
@@ -13,8 +15,8 @@ This project uses a gulp build process for development.  If you want a local cop
 If you want to build the project yourself, follow these steps:
 
 1. Install [Node](https://nodejs.org/en/).
-2. Install gulp via terminal: `npm install -g gulp`.
-3. Open at terminal at `emojify/` and install gulp dependencies: `gulp install`.
+2. Install the gulp command line tool (globally) via terminal: `npm install -g gulp`.
+3. Open at terminal at `emojify/` and install gulp dependencies: `npm install`.
 4. Run the default gulp task from terminal: `gulp`.  This will build the site into the `build/` folder and up a local server on port 8080 where the built site can be viewed.  (E.g. [http://127.0.0.1:8080](http://127.0.0.1:8080))
 
 ## License

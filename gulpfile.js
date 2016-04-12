@@ -176,13 +176,37 @@ gulp.task("run", [
     "watch"
 ]);
 
+
 // _____________________________________________________________________________
 // CLEANING TASKS
 // These gulp tasks handle deleting files.
 
 // Delete all of the build folder contents.
-gulp.task("clean", function () {
+gulp.task("clean:build", function () {
     return del(["./build/**/*"]);
+});
+
+// Delete all of the build folder contents.
+gulp.task("clean:publish", function () {
+    return del(["./publish/**/*"]);
+});
+
+
+// _____________________________________________________________________________
+// DEPLOYING TASKS
+// These gulp tasks handle everything related to deploying the site to live
+// server(s).
+
+gulp.task("push:gh-pages", function () {
+    return gulp.src("./build/**/*")
+        .pipe(ghPages({
+            remoteUrl: "https://github.com/mikewesthad/emojify.git"
+        }));
+});
+
+// Build, deploy build/ folder to gh-pages and then clean up
+gulp.task("deploy:gh-pages", function () {
+    return runSequence("build", "push:gh-pages", "clean:publish");
 });
 
 

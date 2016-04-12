@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Emojify</title>
+	<link rel="stylesheet" href="main.css">
+
+	<script>
+		// If running locally, enable livereload for automatically refreshing
+		// the browser when a change to a file is made
+		var hostname = location.hostname;
+		if (hostname === "localhost" || hostname === "127.0.0.1") {
+			document.write('<script src="http://' + hostname + 
+						   ':35729/livereload.js?snipver=1"></' + 'script>');
+		}
+	</script>
+</head>
+<body>	
+	<div id="wrap">
+		<h1>Emojify</h1>
+		<div id="error-message" style="display:none"></div>
+		<div id="tracker-container">
+			<video id="webcam-stream"></video>
+			<div id="controls">
+				<button id="start-button" class="border-button">Start Tracking</button>
+				<button id="stop-button" class="border-button">Stop Tracking</button>
+			</div>
+		</div>
+		<div id="references">
+			<div>Built using:</div>
+			<ul>
+				<li>
+					<a href="//emojione.com/" target="_blank">emojione</a> for emojis
+				</li>
+				<li>
+					<a href="//github.com/auduno/clmtrackr" target="_blank">clmtrackr</a> for face tracking
+				</li>
+				<li>
+					<a href="//p5js.org/" target="_blank">p5js</a> for drawing to canvas
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="models/model_pca_20_svm.js"></script>
+	<script type="text/javascript" src="js/emojify.js"></script>
+</body>
+</html>

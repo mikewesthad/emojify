@@ -2,7 +2,7 @@
 
 ![emojify demo](emojify-demo.gif)
 
-Live site at: [emojify](http://mikewesthad.github.io/emojify)
+Live site at: [emojify](https://www.mikewesthad.com/emojify/)
 
 Playing around with JavaScript face tracking.  Emojify tracks your face position and draws an emoji on top of it.  If you smile, the emoji smiles too.
 
